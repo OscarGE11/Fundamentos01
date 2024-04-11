@@ -1,0 +1,28 @@
+<div id="form">
+    <h2>Ingreso de producto a stock</h2>
+    <label>Descripción
+    <input type="text" name="" id="">
+    
+</label><br>
+<label>Código
+    <input type="text">
+    
+</label>
+<label>Precio Costo $
+    <input type="text" [(ngModel)]="precioCosto">
+    
+</label><br>
+<label>Precio Venta $
+    <input type="text" [(ngModel)]="precioVenta">
+    
+</label>
+<label>Stock Ideal
+    <input type="text" [(ngModel)]="stock">
+    
+</label><br>
+<button>Modificar</button>
+<button (click)="comprobarStockYPrecios()">Ingresar</button>
+<button>Salir</button>
+
+</div>
+<div  id="contenedor"></div>
